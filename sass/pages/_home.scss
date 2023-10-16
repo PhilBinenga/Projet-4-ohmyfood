@@ -1,0 +1,82 @@
+// RESERVATION // 
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $location-bg;
+    height: 50px;
+    gap: 17px;
+    box-shadow: inset 0px 2px 4px 0px #00000026;
+ 
+}
+
+.location-input {
+
+    display: inline-block;
+    text-align: center;
+    width: 109px;
+    font-weight: 500;
+    border: none;
+    background: $location-bg;
+
+}
+
+.booking-reservation {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    h1 {
+        padding: 20px 17px 17px 17px;
+        text-align: center;
+        margin: 0;
+    }
+    p {
+        text-align: center;
+        padding: 0px 25px 0px 25px;
+        margin-top: 0;
+    }
+}
+
+// FONCTIONNEMENT //
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 50px 20px;
+    margin: 30px 0 50px 0;
+}
+
+.fonctionnement-step-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 20px 50px 10px;
+}
+
+.fonctionnement-step {
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow;
+    gap: 20px;
+    background: $bg-color;
+    border-radius: 20px;
+}
+
+.fonctionnement-step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    margin-left: -10px;
+    width: 24px;
+    height: 24px;
+    
+}
