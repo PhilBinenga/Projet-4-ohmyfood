@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  max-width: 1440px;
+}
+
+/* TEXTES */
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.booking-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.booking-p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.btn-explorer {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+
+.location-input {
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  border: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.restaurant-card-text {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link {
+  font-weight: 500;
+}
+
+.restaurant-new-card {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-explorer {
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+  border: none;
+  width: 218px;
+  height: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  height: 63px;
+}
+
+.logo-header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+}
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #EAEAEA;
+  height: 50px;
+  gap: 17px;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.location-input {
+  display: inline-block;
+  text-align: center;
+  width: 109px;
+  font-weight: 500;
+  border: none;
+  background: #EAEAEA;
+}
+
+.booking-reservation {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.booking-reservation h1 {
+  padding: 20px 17px 17px 17px;
+  text-align: center;
+  margin: 0;
+}
+.booking-reservation p {
+  text-align: center;
+  padding: 0px 25px 0px 25px;
+  margin-top: 0;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 50px 20px;
+  margin: 30px 0 50px 0;
+}
+
+.fonctionnement-step-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 20px 20px 50px 10px;
+}
+
+.fonctionnement-step {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  gap: 20px;
+  background: #F6F6F6;
+  border-radius: 20px;
+}
+
+.fonctionnement-step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  margin-left: -10px;
+  width: 24px;
+  height: 24px;
+}
+
+/* MIXINS */
+
+/*# sourceMappingURL=style.css.map */
