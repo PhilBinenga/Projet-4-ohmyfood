@@ -86,13 +86,6 @@
 .restaurant-section {
     background-color: $bg-color;
     padding: 18px; 
-}
-
-.restaurant-card {
-    background-color: white;
-    border-radius: 15px;
-    position: relative;
-    height: 251px;
     .restaurant-card-image {
         width: 100%;
         height: 231px;
@@ -112,6 +105,5 @@
         margin-bottom: 13px;
         left: 280px;
         top: 60px;
-  
     }
 }
