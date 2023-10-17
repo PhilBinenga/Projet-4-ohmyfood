@@ -66,6 +66,9 @@
     gap: 20px;
     background: $bg-color;
     border-radius: 20px;
+    .fa-store {
+        color: $primary-color;
+}
 }
 
 .fonctionnement-step-number {
@@ -78,5 +81,39 @@
     margin-left: -10px;
     width: 24px;
     height: 24px;
-    
+    }
+
+.restaurant-section {
+    background-color: $bg-color;
+    padding: 18px; 
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    height: 250px;
+    .restaurant-card-image {
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    .restaurant-new-card {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        background: $tertiary-color;
+        position: relative;
+        border-radius: 2px;
+        color: #008766;
+        margin-bottom: 13px;
+        left: 280px;
+        top: 60px;
+  
+
+
+    }
 }

@@ -35,6 +35,11 @@ body {
   border: none;
 }
 
+.fonctionnement-step-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 24px;
@@ -43,6 +48,11 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 18px;
+}
+
+.restaurant-section-title {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .restaurant-card-text {
@@ -72,6 +82,11 @@ a {
   height: 50px;
   transition: all 0.3s ease;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-favorite__regular-heart {
+  display: flex;
+  align-items: center;
 }
 
 /* HEADER */
@@ -153,6 +168,9 @@ header {
   background: #F6F6F6;
   border-radius: 20px;
 }
+.fonctionnement-step .fa-store {
+  color: #9356DC;
+}
 
 .fonctionnement-step-number {
   display: flex;
@@ -164,6 +182,38 @@ header {
   margin-left: -10px;
   width: 24px;
   height: 24px;
+}
+
+.restaurant-section {
+  background-color: #F6F6F6;
+  padding: 18px;
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  height: 250px;
+}
+.restaurant-card .restaurant-card-image {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-card .restaurant-new-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  position: relative;
+  border-radius: 2px;
+  color: #008766;
+  margin-bottom: 13px;
+  left: 280px;
+  top: 60px;
 }
 
 /* MIXINS */
