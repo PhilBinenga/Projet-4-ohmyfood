@@ -47,8 +47,8 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    padding: 0 20px 50px 20px;
-    margin: 30px 0 50px 0;
+    padding: 0 20px 30px 20px;
+    margin: 30px 0 30px 0;
 }
 
 .fonctionnement-step-container {
@@ -83,7 +83,8 @@
     height: 24px;
     }
 
-// RESTAURANT SECTION // 
+/* RESTAURANT SECTION */ 
+
 .restaurant-section {
     background-color: $bg-color;
     padding: 18px; 
@@ -113,6 +114,6 @@
         border-radius: 2px;
         color: #008766;
         margin-bottom: 13px;
-        left: 280px;
+        margin-left: 250px;
         top: 60px;
     }
