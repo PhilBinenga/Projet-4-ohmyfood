@@ -87,33 +87,66 @@
 
 .restaurant-section {
     background-color: $bg-color;
-    padding: 18px; 
-}
-
-.restaurant-card {
-    border-radius: 15px;
-    background-color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-}
-    .restaurant-card-image {
-        display: flex;
-        width: 100%;
+   
+
+
+    .restaurant-card {
+        cursor: pointer;
+        position: relative;
         height: 231px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: white;
+        border-radius: 15px;
+        gap: 18px;
+   
+     
+       
+    } .restaurant-card a {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 275px;
+    
+    } .restaurant-card img {
+        height: 75%;
+        width: 100%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
-        overflow: hidden;
-    }
-    .restaurant-new-card {
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 29px;
-        background: $tertiary-color;
-        position: relative;
+    } .restaurant-card span {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-weight: bold;
+        background-color: $tertiary-color;
+        color: green;
+        padding: 0.5rem;
+        width: 65px;
         border-radius: 2px;
-        color: #008766;
-        margin-bottom: 13px;
-        margin-left: 250px;
-        top: 60px;
     }
+
+   
+
+    .restaurant-card-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .description {
+        width: 85%;
+        h3, p {
+            margin: 0;
+            padding: 0.3rem 0 0 1rem;
+        }
+
+    }
+    
+}
+    
+    
+    
