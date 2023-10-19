@@ -1,0 +1,65 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// LOADER SCREEN //
+
+.loader-screen {
+    @include flexCenter;
+    @include column;
+
+    align-items: center;
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: $primary-color;
+    animation: fadeOut 2s linear 2s forwards;
+    img {
+        height: 120%;
+    }
+    i {
+        font-size: 40px;
+        margin: 40px 10px;
+        background-clip: text;
+    }
+    .anim1 {
+        color: $tertiary-color;
+        animation: flash 1.2s 0.45s linear infinite;
+    }
+    .anim2 {
+        color: $secondary-color;
+        animation: flash 1.2s linear infinite;
+    }
+    .anim3 {
+        color: black;
+        animation: flash 1.2s linear infinite;
+    }
+}
+
+@keyframes flash {
+    0%  {
+      
+        text-shadow: $box-shadow;
+
+    }
+    90% {
+    
+        text-shadow: none;
+    }
+    100% {
+     
+        text-shadow: $box-shadow;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+
+    }
+}
+

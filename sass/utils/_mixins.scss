@@ -1,0 +1,15 @@
+// MIXIN //
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin shadow-transform {
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+}

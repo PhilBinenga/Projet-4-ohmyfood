@@ -1,8 +1,9 @@
+@import '../utils/mixins';
+
 // RESERVATION // 
 
 .booking-form {
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     align-items: center;
     width: 100%;
     background-color: $location-bg;
@@ -25,8 +26,7 @@
 
 .booking-reservation {
     background-color: $bg-color;
-    display: flex;
-    flex-direction: column;
+    @include column;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
@@ -45,15 +45,13 @@
 // FONCTIONNEMENT //
 
 .fonctionnement {
-    display: flex;
-    flex-direction: column;
+    @include column;
     padding: 0 20px 30px 20px;
     margin: 30px 0 30px 0;
 }
 
 .fonctionnement-step-container {
-    display: flex;
-    flex-direction: column;
+    @include column;
     justify-content: space-around;
     gap: 30px;
     padding: 20px 20px 50px 10px;
@@ -72,8 +70,7 @@
 }
 
 .fonctionnement-step-number {
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     align-items: center;
     background-color: $primary-color;
     color: white;
@@ -91,9 +88,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-   
-
-
+    .restaurant-selection {
+        @include column;
+        gap: 18px;
+    }
     .restaurant-card {
         cursor: pointer;
         position: relative;
@@ -103,7 +101,7 @@
         overflow: hidden;
         background: white;
         border-radius: 15px;
-        gap: 18px;
+    
    
      
        
@@ -130,18 +128,17 @@
         width: 65px;
         border-radius: 2px;
     }
-
-   
-
     .restaurant-card-content {
         display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
+        padding: 10px;
     }
     .description {
-        width: 85%;
         h3, p {
             margin: 0;
-            padding: 0.3rem 0 0 1rem;
+            
         }
 
     }

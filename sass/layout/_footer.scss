@@ -1,0 +1,25 @@
+@import '../utils/variables';
+//FOOTER //
+
+footer {
+    background-color: $footer-bg;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list { 
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 7px;
+        color: white;
+        .footer-link i {
+            margin-right: 10px;
+        }
+    }
+}
+

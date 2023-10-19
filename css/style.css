@@ -74,6 +74,68 @@ a {
   font-weight: 500;
 }
 
+.logo {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  justify-content: center;
+}
+
+.loader-screen {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: #9356DC;
+  animation: fadeOut 2s linear 2s forwards;
+}
+.loader-screen img {
+  height: 120%;
+}
+.loader-screen i {
+  font-size: 40px;
+  margin: 40px 10px;
+  background-clip: text;
+}
+.loader-screen .anim1 {
+  color: #99E2D0;
+  animation: flash 1.2s 0.45s linear infinite;
+}
+.loader-screen .anim2 {
+  color: #FF79DA;
+  animation: flash 1.2s linear infinite;
+}
+.loader-screen .anim3 {
+  color: black;
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  90% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .btn-explorer {
   background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
@@ -81,8 +143,12 @@ a {
   cursor: pointer;
   width: 218px;
   height: 50px;
-  transition: all 0.3s ease;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-explorer:hover {
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+  transform: scale(1.01);
+  opacity: 0.9;
 }
 
 .btn-favorite {
@@ -90,14 +156,12 @@ a {
   top: 200px;
   right: 45px;
 }
-
-i {
+.btn-favorite i {
   position: absolute;
-  font-size: 18px;
+  font-size: 1.3rem;
   cursor: pointer;
 }
-
-.fa-solid {
+.btn-favorite .fa-solid {
   opacity: 0;
   color: transparent;
   background-clip: text;
@@ -105,8 +169,30 @@ i {
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
-.fa-solid:hover {
+.btn-favorite .fa-solid:hover {
   opacity: 1;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 7px;
+  color: white;
+}
+footer .footer-list .footer-link i {
+  margin-right: 10px;
 }
 
 /* HEADER */
@@ -212,6 +298,11 @@ header {
   flex-direction: column;
   position: relative;
 }
+.restaurant-section .restaurant-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 .restaurant-section .restaurant-card {
   cursor: pointer;
   position: relative;
@@ -221,7 +312,6 @@ header {
   overflow: hidden;
   background: white;
   border-radius: 15px;
-  gap: 18px;
 }
 .restaurant-section .restaurant-card a {
   overflow: hidden;
@@ -249,14 +339,13 @@ header {
 }
 .restaurant-section .restaurant-card-content {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-}
-.restaurant-section .description {
-  width: 85%;
+  padding: 10px;
 }
 .restaurant-section .description h3, .restaurant-section .description p {
   margin: 0;
-  padding: 0.3rem 0 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
