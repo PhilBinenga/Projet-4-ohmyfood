@@ -6,36 +6,21 @@
 .loader-screen {
     @include flexCenter;
     @include column;
-
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 99999;
-    width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
     background-size: cover;
     background-color: $primary-color;
-    animation: fadeOut 2s linear 2s forwards;
-    img {
-        height: 120%;
-    }
-    i {
-        font-size: 40px;
-        margin: 40px 10px;
-        background-clip: text;
-    }
-    .anim1 {
-        color: $tertiary-color;
-        animation: flash 1.2s 0.45s linear infinite;
-    }
-    .anim2 {
-        color: $secondary-color;
-        animation: flash 1.2s linear infinite;
-    }
-    .anim3 {
-        color: black;
-        animation: flash 1.2s linear infinite;
-    }
+    animation: fadeOut 2s linear 1s forwards;
 }
+    img {
+        height: 100%;
+    }
+
 
 @keyframes flash {
     0%  {
@@ -57,9 +42,14 @@
     0% {
       opacity: 1;
     }
+    99% {
+      width: 100vw;
+      height: 100vw;
+    }
     100% {
-      opacity: 0;
-
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 }
 

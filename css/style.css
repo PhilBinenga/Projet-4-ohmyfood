@@ -87,33 +87,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
   background-size: cover;
   background-color: #9356DC;
-  animation: fadeOut 2s linear 2s forwards;
+  animation: fadeOut 2s linear 1s forwards;
 }
-.loader-screen img {
-  height: 120%;
-}
-.loader-screen i {
-  font-size: 40px;
-  margin: 40px 10px;
-  background-clip: text;
-}
-.loader-screen .anim1 {
-  color: #99E2D0;
-  animation: flash 1.2s 0.45s linear infinite;
-}
-.loader-screen .anim2 {
-  color: #FF79DA;
-  animation: flash 1.2s linear infinite;
-}
-.loader-screen .anim3 {
-  color: black;
-  animation: flash 1.2s linear infinite;
+
+img {
+  height: 100%;
 }
 
 @keyframes flash {
@@ -131,8 +117,14 @@ a {
   0% {
     opacity: 1;
   }
+  99% {
+    width: 100vw;
+    height: 100vw;
+  }
   100% {
     opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
 .btn-explorer {
@@ -157,7 +149,7 @@ a {
 }
 .btn-favorite i {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 18px;
   cursor: pointer;
 }
 .btn-favorite .fa-solid {
