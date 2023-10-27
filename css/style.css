@@ -28,6 +28,68 @@ body {
   color: white;
 }
 
+.logo-header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.menu-title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.entree-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.entree p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15.04px;
+}
+
+.plats-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.plats p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15.04px;
+}
+
+.dessert-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.dessert p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15.04px;
+}
+
+.price p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15.04px;
+}
+
 .location-input {
   font-weight: 500;
   font-size: 16px;
@@ -74,7 +136,7 @@ a {
   font-weight: 500;
 }
 
-.logo {
+.logo-footer {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -164,13 +226,35 @@ img {
   opacity: 1;
 }
 
+.like {
+  position: absolute;
+  top: 30px;
+  left: 320px;
+}
+.like i {
+  position: absolute;
+  font-size: 25px;
+  cursor: pointer;
+}
+.like .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.like .fa-solid:hover {
+  opacity: 1;
+}
+
 footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
   padding: 20px 20px 20px 20px;
 }
-footer .logo {
+footer .logo-footer {
   display: flex;
   flex-direction: column;
 }
@@ -201,6 +285,16 @@ header {
   justify-content: center;
   align-items: center;
   height: 44px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #353535;
 }
 
 .booking-form {
@@ -337,6 +431,31 @@ header {
 }
 .restaurant-section .description h3, .restaurant-section .description p {
   margin: 0;
+}
+
+.accueil img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.menu-restaurant {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 25px 25px 0 0;
+  padding: 0 15px;
+  margin-top: -40px;
+}
+
+.menu-restaurant section {
+  margin-top: -50px;
+}
+
+.line {
+  padding: 0 20px;
+  border-top: solid 3px #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

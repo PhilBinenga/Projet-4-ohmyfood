@@ -1,0 +1,24 @@
+@import '../utils/mixins';
+
+.accueil img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    
+}
+
+
+.menu-restaurant {
+    @include column;
+    position: relative;
+    background-color: $bg-color;
+    border-radius: 25px 25px 0 0;
+    padding: 0 15px;
+}
+.menu-restaurant section {
+    margin-top: -50px;
+}
+.line {
+    padding: 0 20px;
+    border-top: solid 3px $tertiary-color;
+}

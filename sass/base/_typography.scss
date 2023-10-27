@@ -21,6 +21,68 @@
     color: white;
 }
 
+.logo-header h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.menu-title {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.entree-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.entree p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15.04px;
+}
+
+.plats-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.plats p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15.04px;
+}
+
+.dessert-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.dessert p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15.04px;
+}
+
+.price p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15.04px;
+}
+
 .location-input {
     font-weight: 500;
     font-size: 16px;
@@ -62,7 +124,7 @@ a {
     font-weight: 500;
 }
 
-.logo {
+.logo-footer {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
     font-size: 18px;
