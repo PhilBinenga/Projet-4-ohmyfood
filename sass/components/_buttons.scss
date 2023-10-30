@@ -9,7 +9,6 @@
     height: 50px;
     box-shadow: $box-shadow;
     &:hover {
-        @include shadow-transform;
         transform: scale(1.01);
         opacity: 0.9;
 }

@@ -28,7 +28,7 @@ body {
   color: white;
 }
 
-.logo-header h1 {
+.logo-header {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -63,6 +63,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
+  padding-left: 15px;
 }
 
 h4 {
@@ -160,52 +161,6 @@ a {
   color: white;
 }
 
-.loader-screen {
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background-size: cover;
-  background-color: #9356DC;
-  animation: fadeOut 2s linear 1s forwards;
-}
-
-img {
-  height: 100%;
-}
-
-@keyframes flash {
-  0% {
-    text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  }
-  90% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    width: 100vw;
-    height: 100vw;
-  }
-  100% {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-}
 .btn-explorer {
   background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
@@ -216,7 +171,6 @@ img {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .btn-explorer:hover {
-  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
   transform: scale(1.01);
   opacity: 0.9;
 }
@@ -318,6 +272,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: center;
   width: 100%;
   background-color: #EAEAEA;
   height: 50px;
@@ -383,6 +338,7 @@ header {
 .fonctionnement-step-number {
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: center;
   background-color: #9356DC;
   color: white;
@@ -457,7 +413,7 @@ header {
 }
 
 .entree-section, .plats-section, .dessert-section {
-  padding: 15px 15px 0 0;
+  padding: 15px 15px 15px;
   background: #F6F6F6;
 }
 
@@ -468,16 +424,18 @@ header {
   background-color: #F6F6F6;
   border-radius: 25px 25px 0 0;
   padding: 0 15px;
-}
-
-.menu-restaurant section {
   margin-top: -50px;
 }
 
 .line {
   padding: 0 20px;
   border-top: solid 3px #99E2D0;
-  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.entree, .plats, .dessert {
+  padding: 15px 0;
+  width: 80%;
 }
 
 .entree-card, .plats-card, .dessert-card {
@@ -503,6 +461,16 @@ header {
   display: flex;
   align-items: center;
   transition: all 0.4s ease-out;
+}
+
+.fa-circle-check {
+  opacity: 1;
+  font-size: 20px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  padding: 26px 20px;
+  color: white;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
