@@ -28,6 +28,12 @@ body {
   color: white;
 }
 
+.purple-button {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+
 .logo-header {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
@@ -181,7 +187,7 @@ a {
     transform: translateY(0);
   }
 }
-.btn-explorer {
+.purple-button {
   background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   border: none;
@@ -190,7 +196,7 @@ a {
   height: 50px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.btn-explorer:hover {
+.purple-button:hover {
   transform: scale(1.01);
   opacity: 0.9;
 }
@@ -514,7 +520,7 @@ header {
 
 .entree, .plats, .dessert {
   padding: 15px 0;
-  width: 80%;
+  width: 70%;
 }
 
 .entree-card, .plats-card, .dessert-card {
@@ -550,6 +556,13 @@ header {
   padding: 26px 20px;
   color: white;
   margin-left: 15px;
+}
+
+.btn-commande {
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

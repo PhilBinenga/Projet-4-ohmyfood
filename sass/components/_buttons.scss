@@ -1,6 +1,6 @@
 @import '../utils/variables';
 
-.btn-explorer {
+.purple-button {
     background: $gradient-color;
     border-radius: 25px;
     border: none;
@@ -13,6 +13,8 @@
         opacity: 0.9;
 }
 }
+
+
 .btn-favorite {
     position: absolute;
     top: 200px;

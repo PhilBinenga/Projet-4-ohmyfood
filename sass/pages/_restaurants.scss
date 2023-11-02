@@ -32,7 +32,7 @@
 
 .entree, .plats, .dessert {
     padding: 15px 0;
-    width: 80%;
+    width: 70%;
 }
 
 .entree-card, .plats-card, .dessert-card {
@@ -75,3 +75,13 @@
     color: white;
     margin-left: 15px;
         }
+
+
+.btn-commande {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color;
+    padding: 30px;
+    
+}
+
