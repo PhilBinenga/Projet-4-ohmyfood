@@ -22,12 +22,6 @@ body {
   font-size: 18px;
 }
 
-.btn-explorer {
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-}
-
 .purple-button {
   font-weight: 500;
   font-size: 16px;
@@ -187,6 +181,14 @@ a {
     transform: translateY(0);
   }
 }
+@keyframes LTR {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .purple-button {
   background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
@@ -287,6 +289,14 @@ footer .footer-list .footer-link i {
     transform: translateY(0);
   }
 }
+@keyframes LTR {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .loader {
   position: fixed;
   height: 100%;
@@ -382,7 +392,7 @@ header {
   align-items: center;
   padding-bottom: 50px;
 }
-.booking-reservation h1 {
+.booking-reservation h2 {
   padding: 20px 17px 17px 17px;
   text-align: center;
   margin: 0;
@@ -502,6 +512,18 @@ header {
   background: #F6F6F6;
 }
 
+.entree-section {
+  animation: jump 0.75s 1s forwards;
+}
+
+.plats-section {
+  animation: jump 0.75s 1.5s forwards;
+}
+
+.dessert-section {
+  animation: jump 0.75s 2s forwards;
+}
+
 .menu-restaurant {
   display: flex;
   flex-direction: column;
@@ -520,7 +542,7 @@ header {
 
 .entree, .plats, .dessert {
   padding: 15px 0;
-  width: 70%;
+  width: 65%;
 }
 
 .entree-card, .plats-card, .dessert-card {
@@ -530,14 +552,17 @@ header {
   background: white;
   border-radius: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .entree-card p, .entree-card h4, .plats-card p, .plats-card h4, .dessert-card p, .dessert-card h4 {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entree-card:hover .checkout, .plats-card:hover .checkout, .dessert-card:hover .checkout {
-  transform: translateX(-60px);
+  transform: translateX(0px);
+  overflow: hidden;
 }
 .entree-card:hover .plats, .plats-card:hover .plats, .dessert-card:hover .plats {
   width: 65%;
@@ -546,6 +571,7 @@ header {
   display: flex;
   align-items: center;
   transition: all 0.4s ease-out;
+  transform: translateX(60px);
 }
 
 .fa-circle-check {

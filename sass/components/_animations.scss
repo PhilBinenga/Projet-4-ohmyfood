@@ -22,3 +22,12 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes LTR {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(0%)
+    }
+  }
