@@ -181,12 +181,17 @@ a {
     transform: translateY(0);
   }
 }
-@keyframes LTR {
+@keyframes menu-step {
   0% {
-    transform: translateX(-900px);
+    transform: translateX(15rem);
+  }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-out;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .purple-button {
@@ -289,12 +294,17 @@ footer .footer-list .footer-link i {
     transform: translateY(0);
   }
 }
-@keyframes LTR {
+@keyframes menu-step {
   0% {
-    transform: translateX(-900px);
+    transform: translateX(15rem);
+  }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-out;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .loader {
@@ -513,15 +523,15 @@ header {
 }
 
 .entree-section {
-  animation: jump 0.75s 1s forwards;
+  animation: menu-step 0.75s 1s forwards;
 }
 
 .plats-section {
-  animation: jump 0.75s 1.5s forwards;
+  animation: menu-step 0.75s 1.5s forwards;
 }
 
 .dessert-section {
-  animation: jump 0.75s 2s forwards;
+  animation: menu-step 0.75s 2s forwards;
 }
 
 .menu-restaurant {
@@ -535,7 +545,7 @@ header {
 }
 
 .line {
-  padding: 0 20px;
+  padding: 10px 20px 20px;
   border-top: solid 3px #99E2D0;
   margin-left: 15px;
 }

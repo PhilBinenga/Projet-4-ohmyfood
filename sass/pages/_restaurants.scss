@@ -13,15 +13,15 @@
 }
 
 .entree-section {
-    animation: jump .75s 1s forwards;
+    animation: menu-step .75s 1s forwards;
 }
 
 .plats-section {
-    animation: jump .75s 1.5s forwards;
+    animation: menu-step .75s 1.5s forwards;
 }
 
 .dessert-section {
-    animation: jump .75s 2s forwards;
+    animation: menu-step .75s 2s forwards;
 }
 
 
@@ -37,7 +37,7 @@
 
 
 .line {
-    padding: 0 20px;
+    padding: 10px 20px 20px;
     border-top: solid 3px $tertiary-color;
     margin-left: 15px;
     

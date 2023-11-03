@@ -1,0 +1,23 @@
+
+// RESPONSIVE CONFIG //
+
+.booking-section {
+    margin: 0;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 1440px;
+}
+
+// MEDIA QUERIES //
+
+@media (min-width: $tablet){
+
+    .fonctionnement {
+        padding: 50px;
+    } 
+}

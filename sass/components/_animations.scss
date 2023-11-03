@@ -23,11 +23,17 @@
     }
   }
 
-  @keyframes LTR {
+  @keyframes menu-step {
     0% {
-      transform: translateX(-900px);
+      transform: translateX(15rem);
+    }
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-out;
     }
     100% {
-      transform: translateX(0%)
+      transform: translateX(0);
+      opacity: 1;
     }
   }
+  
