@@ -601,4 +601,16 @@ header {
   padding: 30px;
 }
 
+body {
+  margin: 0;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  max-width: 1440px;
+}
+
 /*# sourceMappingURL=style.css.map */
