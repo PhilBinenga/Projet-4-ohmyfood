@@ -1,20 +1,101 @@
 
 // RESPONSIVE CONFIG //
-
 body {
     margin: 0;
-    background-color: $bg-color;
     display: flex;
     justify-content: center;
+    max-width: 2200px;
 }
 
-.main {
-    width: 100%;
-    max-width: 1440px;
-}
 
 // MEDIA QUERIES //
 
 @media (min-width: $tablet){
+    .fonctionnement-step-container {
+        display: grid;
+        gap: 15px 30px;
+        grid-template-columns: repeat(3, 25%);
+        justify-content: center;
+     }
 
+     .restaurant-section {
+            display: grid;
+            justify-content: center;
+           .restaurant-selection {
+            display:grid;
+            grid-template-columns: 350px 350px;
+            grid-row: auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+           }
+     }
+     footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+       }
+    
+       .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+       }
 }
+@media (min-width: $desktop ){
+
+    .booking-title {
+        font-size: 40px; 
+        font-weight: 700;
+    }
+    .fonctionnement-title { 
+        margin: 50px;
+    }
+ .fonctionnement {
+    background: white;
+ }
+
+ .fonctionnement-step-container {
+    display: grid;
+    gap: 15px 30px;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+  
+ }
+ .restaurant-section {
+    display: grid;
+    justify-content: center;
+   .restaurant-selection {
+    display:grid;
+    grid-template-columns: 490px 490px;
+    width: 100%;
+    grid-row: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+   }
+   footer {
+    display: flex;
+    flex-direction: row;
+    
+   }
+
+   .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+   }
+
+   .accueil {
+    display: flex;
+    justify-content: center;
+    padding: 180px 180px;
+   }
+}
+}
+ 
+
+ 
+
