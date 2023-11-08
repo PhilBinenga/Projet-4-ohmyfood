@@ -24,7 +24,6 @@ body {
            .restaurant-selection {
             display:grid;
             grid-template-columns: 350px 350px;
-            grid-row: auto auto;
             grid-column-gap: 20px;
             grid-row-gap: 20px;
            }
@@ -70,7 +69,6 @@ body {
     display:grid;
     grid-template-columns: 490px 490px;
     width: 100%;
-    grid-row: auto auto;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
    }
