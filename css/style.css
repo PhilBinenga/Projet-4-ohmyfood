@@ -3,7 +3,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  max-width: 1440px;
 }
 
 /* TEXTES */
@@ -273,6 +272,19 @@ footer .footer-list {
 }
 footer .footer-list .footer-link i {
   margin-right: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
 }
 
 @keyframes loader {
@@ -602,11 +614,18 @@ header {
   padding: 30px;
 }
 
+@media (min-width: 1024px) {
+  .sectionContainer {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F6F6F6;
+  }
+}
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  max-width: 2200px;
 }
 
 @media (min-width: 768px) {
@@ -666,22 +685,6 @@ body {
     width: 100%;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-  }
-  .restaurant-section footer {
-    display: flex;
-    flex-direction: row;
-  }
-  .restaurant-section .footer-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-  }
-  .restaurant-section .accueil {
-    display: flex;
-    justify-content: center;
-    padding: 180px 180px;
   }
 }
 

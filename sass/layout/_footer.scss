@@ -23,4 +23,19 @@ footer {
     }
 }
 
+@media (min-width: $desktop) {
+    
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    
+   }
 
+   .footer-list {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+   }

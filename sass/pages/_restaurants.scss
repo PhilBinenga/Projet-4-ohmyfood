@@ -104,3 +104,16 @@
     background-color: $bg-color;
     padding: 30px;
 }
+
+@media (min-width: $desktop ){
+    .sectionContainer {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $bg-color ;
+        
+       
+    }
+
+
+}
