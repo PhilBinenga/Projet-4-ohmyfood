@@ -26,6 +26,10 @@ body {
             grid-column-gap: 20px;
             grid-row-gap: 20px;
            }
+           .sectionContainer{
+        background-color: $bg-color;
+    }
+    
      }
      footer {
         display: flex;

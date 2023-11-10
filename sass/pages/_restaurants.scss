@@ -106,11 +106,34 @@
 }
 
 @media (min-width: $desktop ){
-    .sectionContainer {
+    .accueil img {
+        height: 383px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .like i {                                        
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    left: 550.5px;
+    }
+    .sectionContainer {                                                                                                                           
         width: 70%;
         margin-right: auto;
-        margin-left: auto;
+        margin-left: auto;                                                      
         background-color: $bg-color ;
+        align-items:center ;
+        justify-content: center;
+        .menu-restaurant {
+          @include flexCenter;
+        }
+        .entree-section, .plats-section, .dessert-section {
+           
+            margin:-15px 193px 0 193px;
+            padding: 0 100px;
+           
+        }
+
         
        
     }

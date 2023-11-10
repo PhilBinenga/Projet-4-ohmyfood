@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* TEXTES */
@@ -274,19 +274,19 @@ footer .footer-list .footer-link i {
   margin-right: 10px;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
 }
-
-.footer-list {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 16px;
-}
-
 @keyframes loader {
   100% {
     opacity: 0;
@@ -615,11 +615,33 @@ header {
 }
 
 @media (min-width: 1024px) {
+  .accueil img {
+    height: 383px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .like i {
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    left: 550.5px;
+  }
   .sectionContainer {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
     background-color: #F6F6F6;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionContainer .menu-restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionContainer .entree-section, .sectionContainer .plats-section, .sectionContainer .dessert-section {
+    margin: -15px 193px 0 193px;
+    padding: 0 100px;
   }
 }
 body {
@@ -644,6 +666,9 @@ body {
     grid-template-columns: 350px 350px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+  }
+  .restaurant-section .sectionContainer {
+    background-color: #F6F6F6;
   }
   footer {
     display: flex;
