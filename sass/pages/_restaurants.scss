@@ -13,15 +13,18 @@
 }
 
 .entree-section {
-    animation: menu-step .75s 1s forwards;
+    animation-timing-function: ease-out;
+    animation: menu-step .75s 0s forwards;
 }
 
 .plats-section {
-    animation: menu-step .75s 1.5s forwards;
+    animation-timing-function: ease-out;
+    animation: menu-step 1.5s 0s forwards;
 }
 
 .dessert-section {
-    animation: menu-step .75s 2s forwards;
+    animation: menu-step 2s 0s forwards;
+    animation-timing-function: ease-out;
 }
 
 

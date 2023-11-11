@@ -148,7 +148,7 @@ a {
   font-weight: 500;
 }
 
-.restaurant-new-card {
+span {
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -536,15 +536,21 @@ header {
 }
 
 .entree-section {
-  animation: menu-step 0.75s 1s forwards;
+  animation-timing-function: ease-out;
+  animation: menu-step 0.75s 0s forwards;
+  background-color: #F6F6F6;
 }
 
 .plats-section {
-  animation: menu-step 0.75s 1.5s forwards;
+  animation-timing-function: ease-out;
+  animation: menu-step 1.5s 0s forwards;
+  background-color: #F6F6F6;
 }
 
 .dessert-section {
-  animation: menu-step 0.75s 2s forwards;
+  animation: menu-step 2s 0s forwards;
+  animation-timing-function: ease-out;
+  background-color: #F6F6F6;
 }
 
 .menu-restaurant {
@@ -697,7 +703,7 @@ body {
   .fonctionnement-step-container {
     display: grid;
     gap: 15px 30px;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(3, 20%);
     justify-content: center;
   }
   .restaurant-section {
