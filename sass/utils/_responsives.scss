@@ -51,18 +51,19 @@ body {
         font-size: 40px; 
         font-weight: 700;
     }
-    .fonctionnement-title { 
-        margin: 50px;
-    }
+ 
  .fonctionnement {
     background: white;
+    padding: 50px 180px;
  }
 
  .fonctionnement-step-container {
-    display: grid;
-    gap: 15px 30px;
-    grid-template-columns: repeat(3, 20%);
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    .fonctionnement-step {
+        width: 40%;
+        height: 72.38px;
+    }
   
  }
  .restaurant-section {
@@ -70,11 +71,17 @@ body {
     justify-content: center;
    .restaurant-selection {
     display:grid;
-    grid-template-columns: 490px 490px;
+    grid-template-columns: 700px 700px;
     width: 100%;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
    }
+   .like i {                                        
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    left: 1050px;
+    }
    
 }
 }
