@@ -31,7 +31,6 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  font-style: italic;
 }
 
 .menu-title {
@@ -583,6 +582,8 @@ header {
 .entree-card p, .entree-card h4, .plats-card p, .plats-card h4, .dessert-card p, .dessert-card h4 {
   margin: 0;
   white-space: nowrap;
+}
+.entree-card:hover p, .entree-card:hover h4, .plats-card:hover p, .plats-card:hover h4, .dessert-card:hover p, .dessert-card:hover h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }

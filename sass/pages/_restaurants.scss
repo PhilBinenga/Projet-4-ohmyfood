@@ -65,11 +65,14 @@
     p, h4{
         margin: 0;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        
        
     }
     &:hover {
+        p, h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .checkout {
             transform: translateX(0px);
             overflow: hidden;
@@ -89,6 +92,7 @@
         
     }
 }
+
 
 .fa-circle-check {
     opacity: 1;
